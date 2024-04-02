@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Cost Prediction</title>
+    <link rel= "stylesheet" type= "text/css" href= "css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Cost Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="age">Age:</label>
+            <input class="age" type="number" id="age" name="age" required><br>
+            <label for="sex">Sex:</label>
+            <select class="sex"  id="sex" name="sex" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+            <label for="bmi">BMI:</label>
+            <input class="bmi" type="number" id="bmi" name="bmi" step="0.01" required><br>
+            <label for="children">Number of Children:</label>
+            <input class="children" type="number" id="children" name="children" required><br>
+            <label for="smoker">Smoker:</label>
+            <select class="smoker" id="smoker" name="smoker" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+            <label for="region">Region:</label>
+            <select class="region" id="region" name="region" required>
+                <option value="southwest">Southwest</option>
+                <option value="southeast">Southeast</option>
+                <option value="northwest">Northwest</option>
+                <option value="northeast">Northeast</option>
+            </select><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
