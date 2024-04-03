@@ -29,7 +29,7 @@ body {
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -79,6 +79,7 @@ input[type="submit"] {
     cursor: pointer;
     margin: 2em 0 1em 0.8em;
     font-size: 18px;
+    text-align: center;
 }
 
 input[type="submit"]:hover {
